@@ -20,7 +20,8 @@ const UseContextPage: React.FunctionComponent = () => {
             <h3>
                 <strong>Use Context Hook</strong>
             </h3>
-            <button onClick={() => setCount((c) => c + 1)}>Increase Count</button><br />
+            <button onClick={() => setCount((c) => c + 1)}>Increase Count</button>
+            <br />
             Input: <input type="text" onChange={(event) => setInput(event.target.value)} />
             <SampleContext.Provider value={{ state: { count, input } }}>
                 <hr style={{ color: 'white', width: '100%' }} />
