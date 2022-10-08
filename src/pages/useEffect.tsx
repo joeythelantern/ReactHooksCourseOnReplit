@@ -1,7 +1,7 @@
 import React from 'react';
 
 const UseEffectPage: React.FunctionComponent = () => {
-    return <p>Welcome!</p>;
+    return <p>UseEffectPage!</p>;
 };
 
 export default UseEffectPage;

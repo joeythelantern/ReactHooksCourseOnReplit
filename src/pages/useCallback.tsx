@@ -1,7 +1,7 @@
 import React from 'react';
 
 const UseCallbackPage: React.FunctionComponent = () => {
-    return <p>Welcome!</p>;
+    return <p>UseCallbackPage!</p>;
 };
 
 export default UseCallbackPage;

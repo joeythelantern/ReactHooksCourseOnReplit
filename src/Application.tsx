@@ -63,7 +63,7 @@ const Navbar = () => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', border: 'dashed' }}>
                 {links.map((l) => (
                     <button onClick={() => navigate(l.path)} style={{ margin: 1 }}>
                         {l.name}
@@ -77,13 +77,15 @@ const Navbar = () => {
 
 const Application: React.FunctionComponent = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Navbar />}>
-                {links.map((l) => (
-                    <Route path={l.path} key={l.name} element={l.render} />
-                ))}
-            </Route>
-        </Routes>
+        <div style={{ padding: 2, backgroundColor: 'black', color: 'white', height: '100vh' }}>
+            <Routes>
+                <Route path="/" element={<Navbar />}>
+                    {links.map((l) => (
+                        <Route path={l.path} key={l.name} element={l.render} />
+                    ))}
+                </Route>
+            </Routes>
+        </div>
     );
 };
 
