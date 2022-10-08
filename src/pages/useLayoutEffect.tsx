@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 
 const UseLayoutEffectPage: React.FunctionComponent = () => {
-    return <p>UseLayoutEffectPage!</p>;
+    useEffect(() => {
+        console.log('The component has been re-rendered');
+    });
+
+    useLayoutEffect(() => {
+        console.log('Always runs before Use-Effect')
+    });
+
+    return (
+        <div>
+            <h3>
+                <strong>Use Layout Effect Hook</strong>
+            </h3>
+        </div>
+    );
 };
 
 export default UseLayoutEffectPage;

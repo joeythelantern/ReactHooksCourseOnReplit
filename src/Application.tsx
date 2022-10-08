@@ -7,7 +7,7 @@ import UseIdPage from './pages/useId';
 import UseLayoutEffectPage from './pages/useLayoutEffect';
 import UseMemoPage from './pages/useMemo';
 import UseRefPage from './pages/useRef';
-import UseReducerPage from './pages/userReducer';
+import UseReducerPage from './pages/useReducer';
 import UseStatePage from './pages/useState';
 
 const links = [
@@ -17,34 +17,14 @@ const links = [
         path: '/'
     },
     {
-        name: 'useEffect',
-        render: <UseEffectPage />,
-        path: '/useEffect'
-    },
-    {
-        name: 'useCallback',
-        render: <UseCallbackPage />,
-        path: '/useCallback'
-    },
-    {
-        name: 'useContext',
-        render: <UseContextPage />,
-        path: '/useContext'
-    },
-    {
         name: 'useReducer',
         render: <UseReducerPage />,
         path: '/useReducer'
     },
     {
-        name: 'useRef',
-        render: <UseRefPage />,
-        path: '/useRef'
-    },
-    {
-        name: 'useId',
-        render: <UseIdPage />,
-        path: '/useId'
+        name: 'useEffect',
+        render: <UseEffectPage />,
+        path: '/useEffect'
     },
     {
         name: 'useLayoutEffect',
@@ -52,9 +32,29 @@ const links = [
         path: '/useLayoutEffect'
     },
     {
+        name: 'useRef',
+        render: <UseRefPage />,
+        path: '/useRef'
+    },
+    {
+        name: 'useContext',
+        render: <UseContextPage />,
+        path: '/useContext'
+    },
+    {
+        name: 'useId',
+        render: <UseIdPage />,
+        path: '/useId'
+    },
+    {
         name: 'useMemo',
         render: <UseMemoPage />,
         path: '/useMemo'
+    },
+    {
+        name: 'useCallback',
+        render: <UseCallbackPage />,
+        path: '/useCallback'
     }
 ];
 
