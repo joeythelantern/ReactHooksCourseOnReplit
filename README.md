@@ -1,4 +1,10 @@
-## Running React on Repl.it
+## React Hooks with Typescript Full Course
+
+This Repl is a boilerplate that gives you some basic examples of React Hooks using Typescript. These examples are rudimentary and can be applied to your own projects however you like. This Repl is being created in tandem with a YouTube course.
+
+YouTube video to be published soon.
+
+----------------------------------------------------------------
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
