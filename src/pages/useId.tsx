@@ -1,16 +1,18 @@
-import React, { useId, useState } from 'react';
+import React, { useId } from 'react';
 
 const UseIdPage: React.FunctionComponent = () => {
-    const [, setCount] = useState<number>(0);
     const id = useId();
+    const id2 = useId();
+    const id3 = useId();
 
     return (
         <div>
             <h3>
                 <strong>Use ID Hook</strong>
             </h3>
-            <p>Your ID is: {id}</p>
-            <button onClick={() => setCount((c) => c + 1)}>Re-render!</button>
+            <p>
+                Your IDs are: '{id}', '{id2}', '{id3}'
+            </p>
         </div>
     );
 };

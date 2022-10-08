@@ -42,11 +42,6 @@ const links = [
         path: '/useContext'
     },
     {
-        name: 'useId',
-        render: <UseIdPage />,
-        path: '/useId'
-    },
-    {
         name: 'useMemo',
         render: <UseMemoPage />,
         path: '/useMemo'
@@ -55,6 +50,11 @@ const links = [
         name: 'useCallback',
         render: <UseCallbackPage />,
         path: '/useCallback'
+    },
+    {
+        name: 'useId',
+        render: <UseIdPage />,
+        path: '/useId'
     }
 ];
 

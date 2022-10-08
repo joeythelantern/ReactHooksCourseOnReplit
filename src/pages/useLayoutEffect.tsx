@@ -6,7 +6,7 @@ const UseLayoutEffectPage: React.FunctionComponent = () => {
     });
 
     useLayoutEffect(() => {
-        console.log('Always runs before Use-Effect')
+        console.log('Always runs before Use-Effect');
     });
 
     return (
