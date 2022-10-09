@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const UseStatePage: React.FunctionComponent = () => {
-    const [count, setCount] = useState<number>(0);
+    let count = 0
 
     return (
         <div>
@@ -9,7 +9,7 @@ const UseStatePage: React.FunctionComponent = () => {
                 <strong>Use State Hook</strong>
             </h3>
             <p>You clicked the button: {count} times!</p>
-            <button onClick={() => setCount((c) => c + 1)}>Click me!</button>
+            <button onClick={() => { count = count + 1; console.log(count) }}>Click me!</button>
         </div>
     );
 };

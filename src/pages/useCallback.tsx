@@ -1,11 +1,11 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 
 const UseCallbackPage: React.FunctionComponent = () => {
     const [count, setCount] = useState(0);
 
-    const helloWorldCallback = useCallback((number: number) => {
+    const helloWorldCallback = (number: number) => {
         alert('Number was ' + number);
-    }, []);
+    };
 
     return (
         <div>

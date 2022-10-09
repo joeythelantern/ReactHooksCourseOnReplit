@@ -1,19 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const UseEffectPage: React.FunctionComponent = () => {
     const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        console.log('The component has been re-rendered');
-    });
-
-    useEffect(() => {
-        console.log('Initial Load');
-    }, []);
-
-    useEffect(() => {
-        console.log('Count is now ' + count);
-    }, [count]);
 
     return (
         <div>

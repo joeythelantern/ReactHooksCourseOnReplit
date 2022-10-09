@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 const UseRefPage: React.FunctionComponent = () => {
     return (
@@ -11,21 +11,18 @@ const UseRefPage: React.FunctionComponent = () => {
 };
 
 const ExampleOne: React.FunctionComponent = () => {
-    const inputRef = useRef<HTMLInputElement>(null);
-
     return (
         <div>
             <h3>
                 <strong>Use Ref Example 1: Accessing DOM Elements</strong>
             </h3>
-            <input type="text" ref={inputRef} />
-            <button onClick={() => inputRef.current?.focus()}>Focus Input</button>
+            <input />
+            <button>Focus Input</button>
         </div>
     );
 };
 
 const ExampleTwo: React.FunctionComponent = () => {
-    const coolNumber = useRef(0);
     const [count, setCount] = useState(0);
 
     return (
@@ -35,11 +32,8 @@ const ExampleTwo: React.FunctionComponent = () => {
             </h3>
             <p>You clicked the button: {count} times!</p>
             <button onClick={() => setCount((c) => c + 1)}>Click me!</button>
-            <p>You clicked the cool button: {coolNumber.current} times!</p>
+            <p>You clicked the cool button: times!</p>
             <button
-                onClick={() => {
-                    coolNumber.current += 1;
-                }}
             >
                 Click me!
             </button>

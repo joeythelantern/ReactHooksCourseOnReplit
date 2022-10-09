@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 
 const UseMemoPage: React.FunctionComponent = () => {
     const [count, setCount] = useState(0);
     const [color, setColour] = useState('white');
 
-    const calculation = useMemo(() => expensiveCalculation(count), [count]);
+    const calculation = expensiveCalculation(count)
 
     const updateColour = () => setColour((c) => (c === 'white' ? 'cyan' : 'white'));
 

@@ -1,12 +1,8 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const UseLayoutEffectPage: React.FunctionComponent = () => {
     useEffect(() => {
         console.log('The component has been re-rendered');
-    });
-
-    useLayoutEffect(() => {
-        console.log('Always runs before Use-Effect');
     });
 
     return (
